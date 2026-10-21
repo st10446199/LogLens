@@ -1,0 +1,60 @@
+{
+  "total": 61,
+  "errors": 10,
+  "error_rate": 16.39,
+  "skipped": 1,
+  "malformed_lines": [
+    61
+  ],
+  "normalized": true,
+  "first": "2026-01-15T09:00:00+00:00",
+  "last": "2026-01-15T09:12:00+00:00",
+  "levels": {
+    "CRITICAL": 1,
+    "ERROR": 9,
+    "INFO": 39,
+    "WARNING": 12
+  },
+  "services": {
+    "checkout": 36,
+    "payments": 25
+  },
+  "timeline": [
+    {
+      "minute": "2026-01-15T09:03:00+00:00",
+      "count": 3
+    },
+    {
+      "minute": "2026-01-15T09:04:00+00:00",
+      "count": 3
+    },
+    {
+      "minute": "2026-01-15T09:08:00+00:00",
+      "count": 3
+    },
+    {
+      "minute": "2026-01-15T09:12:00+00:00",
+      "count": 1
+    }
+  ],
+  "groups": [
+    {
+      "service": "checkout",
+      "level": "ERROR",
+      "message": "Gateway timeout for request <number>",
+      "count": 6
+    },
+    {
+      "service": "payments",
+      "level": "ERROR",
+      "message": "Gateway timeout for request <number>",
+      "count": 3
+    },
+    {
+      "service": "payments",
+      "level": "CRITICAL",
+      "message": "Connection pool exhausted",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.vscode/
+__pycache__/
+*.pyc
+node_modules/
+reports/
+.env
+.env.*
+*.user
+.DS_Store
+Thumbs.db
